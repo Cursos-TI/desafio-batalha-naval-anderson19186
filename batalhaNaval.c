@@ -22,6 +22,12 @@
 
 
 // Função para posicionar o navio
+ //int x e int y coordena inicial
+// Se dx = 1 e dy = 0, o navio será colocado verticalmente para baixo.
+//Se dx = 0 e dy = 1, o navio será colocado horizontalmente para a direita.
+//Se dx = -1 e dy = 0, o navio será colocado verticalmente para cima.
+//Se dx = 0 e dy = -1, o navio será colocado horizontalmente para a esquerda.
+ 
 void posicionarNavio(int tabuleiro[linhas][colunas], int x, int y, int dx, int dy) {
     for (int k = 0; k < tamanho_navio; k++) {
         int nx = x + k * dx;
